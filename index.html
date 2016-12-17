@@ -16,5 +16,24 @@
     </head>
     <body>
         <center><img src="posts.png" style="margin-top: 25px;" width="200px"></img></center>
+        <div class="container">
+            <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '226697924407333',
+                  xfbml      : true,
+                  version    : 'v2.6'
+                });
+              };
+
+              (function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = "//connect.facebook.net/en_US/sdk.js";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));
+            </script>
+        </div>
     </body>
 </html>
